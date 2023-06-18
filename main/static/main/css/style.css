@@ -1,0 +1,65 @@
+body {
+	background-image: url(../img/oboii.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
+	margin: 0;
+
+}
+
+header {
+	background-color:#004524;
+	opacity: 0.9;
+}
+
+nav {
+
+	padding: 5px 12px;
+}
+
+#my-home-link {
+	color: white;
+	padding: 10px 10px;
+}
+
+#my-link {
+	color:white;
+	padding: 10px 40px;
+}
+
+
+#my-container {
+	color: white;
+}
+
+#my-bth {
+	background-color: #004524;
+	border-color: #004524;
+}
+
+#my-form {
+	opacity: 0.9;
+}
+
+#start-btn {
+	background-color: #004524;
+	border-color: #004524;
+	width: 37%;
+	padding: 15px 15px;
+	margin: 10px 120px;
+
+}
+
+#start-form {
+	margin: 8% 30%; 
+
+}
+
+#btn-right{
+	float: right;
+	color: white;
+} 
+
+#btn-left {
+	float: left;
+	color: white;
+}

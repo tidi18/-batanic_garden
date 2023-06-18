@@ -1,0 +1,10 @@
+{% extends 'main/layout.html' %}
+{% block title %}Стартовая страница{% endblock %}
+
+{% block body %}
+    <form method="POST" action="{% url 'start_walk' %}" id="start-form">
+        {% csrf_token %}
+        <h3>Авторизация прошла успешна!</h3>
+        <button type="submit" class="btn btn-primary" id="start-btn">Старт</button>
+    </form>
+{% endblock %}

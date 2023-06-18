@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+{% block title %}Главное{% endblock %}
+
+{% block body %}
+	{% for el in list_event %}
+		<h1>{{el.name_event}}</h1>
+		{{el.date }}
+		<hr>
+		<p>{{el.anons}}<p>
+		<hr>
+		<p>{{el.address}}<p>
+	{% endfor %}
+
+{% endblock %}
