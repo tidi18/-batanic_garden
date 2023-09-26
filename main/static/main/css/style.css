@@ -115,3 +115,19 @@
     height: auto; /* Установите желаемую высоту */
     object-fit: cover; /* Этот стиль позволяет изображению заполнять контейнер сохраняя пропорции и обрезать изображение, если оно не соответствует контейнеру */
 }
+
+#about-link{
+	background-color: #004524;
+	text-decoration: none;
+	color: white;
+	border-radius: 2px 2px;
+	padding: 2px;
+	transition: border-radius 0.5s;
+
+}
+
+#about-link:hover {
+	border-radius: 4px 4px;
+}
+
+
