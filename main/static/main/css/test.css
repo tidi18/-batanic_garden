@@ -1,63 +1,44 @@
-#body {
+body {
 	background-image: url(../img/oboii.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 100vh;
 	margin: 0;
+
 }
 
-
-#main_container {
-	color: white;
-	margin: 5px 5px 5px 5px;
-	padding: 20px;
-}
-
-
-#custom-navbar {
-    background-color: #004524 !important;
-    opacity: 0.9; 
-}
-
-#my_nav-link {
-	color: white;
-  border-bottom: 2px solid transparent; 
-  transition: border-color 0.3s;
-}
-
-#my_nav-link:hover {
-  border-color: white;
-}
-
-
-#my_toggler {
-	color: white ;
-}
-
-
-#home-logo-link {
-    max-width: 50px;
-    height: auto;
-    border-radius: 50%;
-}
-
-
-#form_style {
+header {
+	background-color:#004524;
 	opacity: 0.9;
-	
 }
 
-#button_style {
+nav {
+
+	padding: 5px 12px;
+}
+
+#my-home-link {
+	color: white;
+	padding: 10px 10px;
+}
+
+#my-link {
+	color:white;
+	padding: 10px 40px;
+}
+
+
+#my-container {
+	color: white;
+	padding: 50px;
+}
+
+#my-bth {
 	background-color: #004524;
 	border-color: #004524;
 }
 
-#start-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+#my-form {
+	opacity: 0.9;
 }
 
 #start-btn {
@@ -66,6 +47,11 @@
 	width: 37%;
 	padding: 15px 15px;
 	margin: 10px 120px;
+
+}
+
+#start-form {
+	margin: 8% 30%;
 
 }
 
@@ -115,3 +101,6 @@
     height: auto; /* Установите желаемую высоту */
     object-fit: cover; /* Этот стиль позволяет изображению заполнять контейнер сохраняя пропорции и обрезать изображение, если оно не соответствует контейнеру */
 }
+
+
+

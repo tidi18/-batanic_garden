@@ -10,6 +10,9 @@ def index(request):
     return render(request, 'main/index.html', {'list_event': list_event})
 
 
+def about(request):
+    return render(request, 'main/about.html')
+
 def start_page(request):
     if request.method == 'POST':
         plant = Plants.objects.first()  # Получаем первое растение из базы данных

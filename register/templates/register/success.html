@@ -1,6 +1,16 @@
 {% extends 'main/layout.html' %}
 {% block title %}Успешная регистрация{% endblock %}
 {% block body %}
-    <h1>Регистрация успешно завершена</h1>
-    <h3>Ваш токен: {{ token }}</h3>
+  <div id="wrapper">
+    <div>
+      <div id="main-text">
+        <h1>Регистрация успешно завершена</h1>
+      </div>
+      <hr>
+      <div id="main-info">
+        <h3>Ваш токен: {{ token }}</h3>
+      </div>
+      <hr>
+    </div>
+  </div>
 {% endblock %}

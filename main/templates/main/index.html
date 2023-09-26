@@ -2,13 +2,28 @@
 {% block title %}Главное{% endblock %}
 
 {% block body %}
-	{% for el in list_event %}
-		<h1>{{el.name_event}}</h1>
-		{{el.date }}
-		<hr>
-		<p>{{el.anons}}<p>
-		<hr>
-		<p>{{el.address}}<p>
-	{% endfor %}
-
+	<div id="wrapper">
+		{% for el in list_event %}
+			<div>
+				<div id="main-text">
+					<h1>{{el.name_event}}</h1>
+				</div>
+				<div>
+					{{el.date }}
+				</div>
+				<hr>
+				<div id="main-info">
+					<p>{{el.anons}}<p>
+				</div>
+				<hr>
+				<div id="main-info">
+					<p>{{el.address}}<p>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
 {% endblock %}
+
+
+
+

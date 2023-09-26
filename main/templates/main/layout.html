@@ -1,40 +1,50 @@
 {% load static %}
-<!doctype html>
-<html lang='ru'>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>{% block title %}{% endblock %}</title>
-</head>
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+  <title>{% block title %}{% endblock %}</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 <body id="body">
+
+
   <header>
-    <nav>
-      <ul class="nav nav-underline">
-        <li class="nav-item">
-          <a class="nav-link active" id="my-home-link" aria-current="page" href="{% url 'index' %}">Главное</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="my-link" href="{% url 'register' %}">Получить токен</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="my-link" href="{% url 'check_token' %}">Прогулка по саду</a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link" id="my-link" href="#">Контакты</a>
-        </li>
-      </ul> 
+    <nav class="navbar navbar-expand-lg" id="custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="" href="{% url 'index' %}">
+          <img id="home-logo-link" src="{% static 'img/batanic_garden_logo.png' %}" alt="home logo">
+        </a>
+        <button class="navbar-toggler" id="my_toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" id="my_nav-link" aria-current="page" href="{% url 'index' %}">Главное</a>
+            <a class="nav-link" id="my_nav-link" href="{% url 'register' %}">Получить токен</a>
+            <a class="nav-link" id="my_nav-link" href="{% url 'check_token' %}">Справочник</a>
+            <a class="nav-link" id="my_nav-link" href="{% url 'about' %}">О нас</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
-    <div class="container" id="my-container">    
+
+  <div class="container" id="main_container">
       {% block body %}
       {% endblock %}
-    </div>
+  </div>
+
+
 </body>
 </html>
